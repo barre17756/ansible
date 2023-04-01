@@ -1,0 +1,9 @@
+web01 ansible_host=172.31.3.252 ansible_user=centos ansible_ssh_private_key_file=web-db-keypair.pem
+web02 ansible_host=172.31.3.55 ansible_user=centos ansible_ssh_private_key_file=web-db-keypair.pem
+db01 ansible_host=172.31.55.220 ansible_user=centos ansible_ssh_private_key_file=web-db-keypair.pem
+
+[webgroup]
+web01
+web02
+[dbgroup]
+db01

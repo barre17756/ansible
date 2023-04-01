@@ -1,0 +1,3 @@
+# variable accessible by webgroup
+USRNM: webgroupuser
+COMM: variables from group_vars/webgroup file
