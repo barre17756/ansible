@@ -85,6 +85,13 @@
         path: /opt/devdata
         state: directory
         mode: 0775
+      tags:
+        - system
+
+    - name: Deploy dev data file
+      copy:
+        src: files/dev.txt
+        dest: /opt/devdata/dev.txt
  
   handlers:
     - name: Restart NTP on Redhat
