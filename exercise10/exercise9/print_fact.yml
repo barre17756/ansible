@@ -1,0 +1,13 @@
+---
+- name: Learning fact variable
+  hosts: all
+  tasks:
+    - name: Print OS names
+      debug:
+        var: ansible_distribution
+    - name: Print memory details
+      debug:
+        var: ansible_memory_mb.real.free
+    - name: Print name of processor
+      debug:
+        var: ansible_processor[2]
